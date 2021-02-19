@@ -1,0 +1,12 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+
+/* COLORS */
+:root {
+    --color-blue            : #0065FC;
+    --color-lightblue       : #DEEBFF;
+    --color-black           : #000000;
+    --color-gray            : #F2F2F2;
+    --color-white           : #FFFFFF;
+    --color-transparent     : rgba(255, 255, 255, .4);
+}
