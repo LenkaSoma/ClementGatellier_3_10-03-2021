@@ -10,3 +10,92 @@
     --color-white           : #FFFFFF;
     --color-transparent     : rgba(255, 255, 255, .4);
 }
+
+/* GLOBAL */
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: var(--color-black);
+}
+
+/* NAVIGATION */
+.navigation {
+    margin-bottom: 2rem;
+}
+.navigation-menu {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 160px);
+    align-items: center;
+    justify-content: center;
+}
+.navigation-logo {
+    justify-self: start;
+    padding-top: 40px;
+    min-width: 97px;
+    min-height: 45px
+}
+.navigation-link {
+    padding-top: 50px;
+    padding-bottom: 16px;
+    text-align: center;
+    color: var(--color-black);
+    cursor: pointer;
+}
+.navigation--blue:hover {
+    padding-top: 48px;
+    color: var(--color-blue);
+    border-top: 2px solid var(--color-blue);
+}
+.current {
+    padding-top: 48px;
+    color: var(--color-blue);
+    border-top: 2px solid var(--color-blue);
+}
+.navigation--bold {
+    font-weight: 600;
+    color: var(--color-blue);
+}
+@media screen and (max-width: 768px) {
+    .navigation {
+        margin-bottom: 1rem;
+        padding: 0rem 0vw;
+        width: 100vw;
+    }
+    .navigation-menu {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .navigation-logo {
+        grid-area: 1 / 1 / 2 / 2;
+        padding-left: 5vw;
+    }
+    .navigation--blue {
+        padding: 1rem;
+        border-bottom: 2px solid var(--color-gray);
+    }
+    .current {
+        padding-top: 1rem;
+        color: var(--color-blue);
+        border-top: 0px;
+        border-bottom: 2px solid var(--color-blue);
+    }
+    .navigation--blue:hover {
+        padding-top: 1rem;
+        color: var(--color-blue);
+        border-top: 0px;
+        border-bottom: 2px solid var(--color-blue);
+    }
+    .navigation--bold {
+        grid-area: 1 / 2 / 2 / 3;
+        order: 2;
+        justify-self: end;
+        padding-right: 5vw;
+    }
+}
