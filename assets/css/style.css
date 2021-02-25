@@ -69,7 +69,8 @@ button {
     }
 }
 
-/* NAVIGATION */
+
+/* HEADER - NAVIGATION */
 .navigation {
     margin-bottom: 2rem;
 }
@@ -642,5 +643,34 @@ button {
     }
     .activity-card-img {
         height: 9rem;
+    }
+}
+
+/* FOOTER */
+.footer-menu {
+    background-color: var(--color-gray);
+}
+.footer-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 0rem;
+}
+.footer-column-title {
+    padding-bottom: 1rem;
+}
+.footer-column-item {
+    padding-bottom: 1rem;
+}
+@media screen and (max-width: 1080px) {
+    .footer-layout {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0rem 0rem 0rem;
+    }
+    .footer-column {
+        padding-bottom: 1rem;
+    }
+    .footer-column-item {
+        padding-bottom: 1rem;
     }
 }
