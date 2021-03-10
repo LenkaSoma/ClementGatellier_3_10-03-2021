@@ -1,1 +1,175 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body, html {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.header {
+  position: relative;
+  padding: 1rem 1rem;
+  -webkit-box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+.header_text {
+  font-family: 'Shrikhand', cursive;
+  text-align: center;
+  margin: 0;
+}
+
+.localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.25rem 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f3f3f3;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.localisation-icon {
+  margin-right: 1rem;
+}
+
+.localisation-text {
+  font-weight: 700;
+}
+
+.more-restaurant {
+  padding: 2rem;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.more-restaurant-title {
+  margin: 0;
+}
+
+.more-restaurant-subtitle {
+  font-weight: 300;
+  margin: 1.5rem 0;
+}
+
+.more-restaurant-btn {
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 100px;
+  color: white;
+  background-color: #686868;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  cursor: pointer;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+
+.more-restaurant-btn:hover {
+  background-color: white;
+  -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+
+.more-restaurant-btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.howto {
+  padding: 1rem;
+}
+
+.howto-title {
+  margin-top: 0;
+}
+
+.howto-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 64rem) {
+  .howto-steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.howto-number {
+  background: #9356DC;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  position: absolute;
+  left: -0.75rem;
+}
+
+.howto-step {
+  padding: 1.5rem;
+  margin: 1rem 0 1rem 0.75rem;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+          box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+  border-radius: 1.25rem;
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+@media (min-width: 64rem) {
+  .howto-step {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0;
+    margin-left: 2rem;
+  }
+  .howto-step:first-child {
+    margin-left: 0.75rem;
+  }
+}
+
+.howto-step:first-child {
+  margin-top: 0;
+}
+
+.howto-step:last-child {
+  margin-bottom: 0;
+}
+
+.howto-text {
+  font-weight: bold;
+}
+
+.howto-icon {
+  margin-right: 1rem;
+  color: #7e7e7e;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */
