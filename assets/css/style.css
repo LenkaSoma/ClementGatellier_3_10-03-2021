@@ -137,6 +137,10 @@ body, html {
   position: relative;
 }
 
+.howto-step:hover {
+  background-color: #cdc2df;
+}
+
 @media (min-width: 64rem) {
   .howto-step {
     -webkit-box-flex: 1;
@@ -171,5 +175,159 @@ body, html {
   max-width: 1280px;
   margin: auto;
   position: relative;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 1rem;
+}
+
+.restaurants-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+@media (min-width: 64rem) {
+  .restaurants-cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.restaurants-card-link {
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.restaurants-card-img {
+  height: 12rem;
+  width: 100%;
+  border: transparent solid 0px;
+  border-radius: 1rem 1rem 0 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.restaurants-card-badge {
+  background-color: #99E2D0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+}
+
+.restaurants-card-content {
+  padding: 1rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.restaurants-card-title {
+  margin-bottom: 0.25rem;
+  margin: 0;
+}
+
+.restaurants-card-subtitle {
+  margin: 0;
+  margin-bottom: 0.0rem;
+}
+
+.restaurants-card-btn {
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: transparent 0px solid;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.restaurants-like {
+  color: #fff;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.restaurants-like:hover {
+  color: #9f6bdd;
+  text-shadow: none;
+}
+
+.footer {
+  background-color: #3b3b3b;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.footer-title {
+  color: white;
+  font-family: "Shrikhand", "cursive";
+  margin: 0;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-list:first-child {
+  margin-top: 0;
+}
+
+.footer-list:last-child {
+  margin-bottom: 0;
+}
+
+.footer-links {
+  margin: 0.4rem 0;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-icon {
+  width: 1.2rem;
+  margin-right: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */
