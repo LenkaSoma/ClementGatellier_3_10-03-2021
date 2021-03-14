@@ -16,7 +16,7 @@ body, html {
     padding: 1rem 1rem;
     box-shadow: 0 0 0.4rem rgba(0,0,0,0.30);
 
-    &_text {
+    &-text {
         font-family: 'Shrikhand', cursive;
         text-align: center;
         margin: 0;
@@ -202,7 +202,6 @@ body, html {
   &-card-content {
     padding: 1rem;
     position: relative;
-    display: flex;
     align-items: center;
     flex: 1;
   }
