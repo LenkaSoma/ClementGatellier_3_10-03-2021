@@ -1,14 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-
 body, html {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+}
+
+.loading {
+  animation: loading 0.01s;
+  animation-delay: 1.10s;
+  animation-fill-mode: both;
+  align-items:center;
+  background-color: white;
+  display: flex;
+  height: 100%;
+  justify-content:center;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+
+  &-items {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+  }
+
+  &-item {
+    animation: animload 1s;
+    border-radius: 30px;
+    height: 40px;
+    width: 40px;
+
+    &-1 {
+      background-color: $color-primary;
+    }
+  
+    &-2 {
+      background-color: $color-secondary;
+      animation-delay: 0.25s;
+    }
+  
+    &-3 {
+      background-color: $color-tertiary;
+      animation-delay: 0.5s;
+    }
+  }
 }
 
 .header {
@@ -61,7 +95,7 @@ body, html {
         border-radius: 100px;
         color: white;
         background-color: rgb(104, 104, 104);
-        background-image: linear-gradient(#FF79DA, #9356DC);
+        background-image: linear-gradient($color-secondary, $color-primary);
         cursor: pointer;
         transition-duration: 0.25s;
         box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
@@ -118,7 +152,7 @@ body, html {
       position: relative;
 
       &:hover {
-        background-color: #cdc2df;
+        background-color: #f5edff;
       }
 
       @media (min-width:64rem) {
@@ -233,7 +267,7 @@ body, html {
     text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 
     &:hover {
-      color: #9f6bdd;
+      color: $color-secondary;
       text-shadow: none;
     }
   }
