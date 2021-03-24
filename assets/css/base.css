@@ -576,21 +576,14 @@ body, html {
   display: flex;
 }
 
-.menuItems:hover .menuItems-price {
-  -webkit-animation: price 1s;
-          animation: price 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-}
-
 .menuItems:hover .fa-check {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
-.menuItems-confirmation {
+.menuItems-confirm {
   background-color: #99E2D0;
   margin: -1rem -5rem -1rem 1rem;
   display: -webkit-box;
@@ -607,7 +600,7 @@ body, html {
   width: 4rem;
 }
 
-.menuItems:hover .menuItems-confirmation {
+.menuItems:hover .menuItems-confirm {
   margin-right: -1rem;
 }
 
@@ -617,7 +610,8 @@ body, html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: white;
+  background-color: none;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -629,17 +623,6 @@ body, html {
 .menuItems:hover .menuItems-icons {
   -webkit-transform: rotate(0);
           transform: rotate(0);
-}
-
-.menuItems-icon {
-  color: white;
-  opacity: 0;
-}
-
-.menuItems:hover .menuItems-icon {
-  opacity: 1;
-  background-color: #99E2D0;
-  padding: 35px;
 }
 
 .commands {

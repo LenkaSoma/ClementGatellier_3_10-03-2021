@@ -149,27 +149,23 @@
   }
 
   &:hover {
-    .menuItems-price {
-      animation: price 1s;
-      animation-fill-mode: both;
-    }
     .fa-check {
       transform: rotate(360deg);
-      transition-duration: 0.5s;
+      transition-duration: 0.4s;
     }
   }
 
-  &-confirmation {
+  &-confirm {
     background-color: $color-tertiary;
     margin: -1rem -5rem -1rem 1rem;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition-duration: 0.5s;
     width: 4rem;
   }
 
-  &:hover &-confirmation {
+  &:hover &-confirm {
     margin-right: -1rem;
   }
 
@@ -177,24 +173,14 @@
     height: 1.9rem;
     width: 2.3rem;
     justify-content:center;
-    background-color: white;
-    display:flex;
-    align-items:center;
+    background-color: none;
+    color: white;
+    display: flex;
+    align-items: center;
   }
 
   &:hover &-icons {
     transform: rotate(0);
-  }
-
-  &-icon {
-    color: white;
-    opacity: 0;
-  }
-
-  &:hover &-icon {
-    opacity: 1;
-    background-color: $color-tertiary;
-    padding: 35px;
   }
 }
 
