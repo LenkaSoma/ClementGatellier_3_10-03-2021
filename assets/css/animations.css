@@ -50,24 +50,6 @@
   }
 }
 
-@-webkit-keyframes price {
-  0% {
-    margin-right: 0%;
-  }
-  100% {
-    margin-right: 12%;
-  }
-}
-
-@keyframes price {
-  0% {
-    margin-right: 0%;
-  }
-  100% {
-    margin-right: 12%;
-  }
-}
-
 @-webkit-keyframes itemsVisible {
   0% {
     -webkit-transform: scale(0);
