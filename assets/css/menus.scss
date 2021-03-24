@@ -54,45 +54,23 @@
     justify-content:center;
     cursor: pointer;
     position: relative;
-    background-color: black;
-    
-    &:hover::before {
-      opacity: 1;
-    }
-    
-    &::before {
-      opacity: 0;
-      transition: 0.5s;
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
-    }
   }
+}
 
-  &-like {
-    transition-duration: .25s;
-    background-color: #f6f6f6;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    mix-blend-mode: lighten;
-  }
+.like {
+  color: white;
+  content: "";
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  position: absolute;
+  transition: 0.5s;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 
-  &-btn:hover {
-    .menu__like {
-      &--noBg {
-        opacity: 0;
-      }
-    }
+  &:hover {
+    color: $color-secondary;
+    text-shadow: none;
   }
 }
 
@@ -170,6 +148,17 @@
     display: flex;
   }
 
+  &:hover {
+    .menuItems-price {
+      animation: price 1s;
+      animation-fill-mode: both;
+    }
+    .fa-check {
+      transform: rotate(360deg);
+      transition-duration: 0.5s;
+    }
+  }
+
   &-confirmation {
     background-color: $color-tertiary;
     margin: -1rem -5rem -1rem 1rem;
@@ -185,12 +174,9 @@
   }
 
   &-icons {
-    height: 1.6rem;
-    width: 1.6rem;
+    height: 1.9rem;
+    width: 2.3rem;
     justify-content:center;
-    border-radius: 100px;
-    transform: rotate(180deg);
-    transition-duration: 0.5s;
     background-color: white;
     display:flex;
     align-items:center;
@@ -201,7 +187,14 @@
   }
 
   &-icon {
-    color: $color-tertiary;
+    color: white;
+    opacity: 0;
+  }
+
+  &:hover &-icon {
+    opacity: 1;
+    background-color: $color-tertiary;
+    padding: 35px;
   }
 }
 

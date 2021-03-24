@@ -461,50 +461,24 @@ body, html {
           justify-content: center;
   cursor: pointer;
   position: relative;
-  background-color: black;
 }
 
-.menus-btn:hover::before {
-  opacity: 1;
-}
-
-.menus-btn::before {
-  opacity: 0;
+.like {
+  color: white;
+  content: "";
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  position: absolute;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  content: "";
-  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
 }
 
-.menus-like {
-  -webkit-transition-duration: .25s;
-          transition-duration: .25s;
-  background-color: #f6f6f6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  mix-blend-mode: lighten;
-}
-
-.menus-btn:hover .menu__like--noBg {
-  opacity: 0;
+.like:hover {
+  color: #FF79DA;
+  text-shadow: none;
 }
 
 .submenus {
@@ -602,6 +576,20 @@ body, html {
   display: flex;
 }
 
+.menuItems:hover .menuItems-price {
+  -webkit-animation: price 1s;
+          animation: price 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.menuItems:hover .fa-check {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
 .menuItems-confirmation {
   background-color: #99E2D0;
   margin: -1rem -5rem -1rem 1rem;
@@ -624,16 +612,11 @@ body, html {
 }
 
 .menuItems-icons {
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 1.9rem;
+  width: 2.3rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 100px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -649,7 +632,14 @@ body, html {
 }
 
 .menuItems-icon {
-  color: #99E2D0;
+  color: white;
+  opacity: 0;
+}
+
+.menuItems:hover .menuItems-icon {
+  opacity: 1;
+  background-color: #99E2D0;
+  padding: 35px;
 }
 
 .commands {
@@ -740,6 +730,24 @@ body, html {
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes price {
+  0% {
+    margin-right: 0%;
+  }
+  100% {
+    margin-right: 12%;
+  }
+}
+
+@keyframes price {
+  0% {
+    margin-right: 0%;
+  }
+  100% {
+    margin-right: 12%;
   }
 }
 
