@@ -30,7 +30,7 @@
   z-index: 1;
   position: relative;
   border-radius: 2rem 2rem 0 0;
-  background-color: #f6f6f6;
+  background-color: $background;
 
   &-header {
     padding: 1rem 2rem 0 1rem;
@@ -58,7 +58,7 @@
 }
 
 .like {
-  color: white;
+  color: $background;
   content: "";
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   position: absolute;
@@ -150,6 +150,10 @@
 
   &:hover {
     .fa-check {
+      color: $color-tertiary;
+      background-color: white;
+      padding: 4px;
+      border-radius: 50px;
       transform: rotate(360deg);
       transition-duration: 0.4s;
     }

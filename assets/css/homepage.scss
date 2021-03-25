@@ -147,7 +147,7 @@ body, html {
       margin: 1rem 0 1rem 0.75rem;
       box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
       border-radius: 1.25rem;
-      background-color: #f6f6f6;
+      background-color: $background;
       display: flex;
       position: relative;
 
@@ -191,7 +191,7 @@ body, html {
 }
 
 .restaurants {
-  background-color: #f6f6f6;
+  background-color: $background;
   padding: 1rem;
 
   &-cards {

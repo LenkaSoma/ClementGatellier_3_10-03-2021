@@ -464,7 +464,7 @@ body, html {
 }
 
 .like {
-  color: white;
+  color: #f6f6f6;
   content: "";
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   position: absolute;
@@ -577,6 +577,10 @@ body, html {
 }
 
 .menuItems:hover .fa-check {
+  color: #99E2D0;
+  background-color: white;
+  padding: 4px;
+  border-radius: 50px;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   -webkit-transition-duration: 0.4s;
@@ -713,24 +717,6 @@ body, html {
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-  }
-}
-
-@-webkit-keyframes price {
-  0% {
-    margin-right: 0%;
-  }
-  100% {
-    margin-right: 12%;
-  }
-}
-
-@keyframes price {
-  0% {
-    margin-right: 0%;
-  }
-  100% {
-    margin-right: 12%;
   }
 }
 
