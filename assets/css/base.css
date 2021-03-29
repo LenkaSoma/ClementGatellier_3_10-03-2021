@@ -608,16 +608,16 @@ body, html {
   height: 1.9rem;
   width: 2.3rem;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: none;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: transparent;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .menuItems:hover .menuItems-icons {
