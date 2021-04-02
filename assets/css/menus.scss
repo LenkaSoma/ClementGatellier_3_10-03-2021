@@ -61,14 +61,18 @@
   content: "";
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   position: absolute;
-  transition: 0.5s;
+  transition: 0.8s;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
 
   &:hover {
-    color: $color-secondary;
+    color: $color-primary;
+    transition-duration: 0.35s;
+    background: linear-gradient($color-secondary, $color-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
 }
@@ -107,9 +111,7 @@
 .menuItems {
   background-color: white;
   padding: 1rem;
-  animation: itemsVisible .6s;
-  animation-fill-mode: both;
-  transform: scale(0);
+  animation: itemsVisible 2s;
   display: flex;
   border-radius: 0.75rem;
   margin: 1rem 0;

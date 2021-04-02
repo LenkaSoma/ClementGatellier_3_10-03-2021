@@ -236,6 +236,7 @@ body, html {
   &-card-content {
     padding: 1rem;
     position: relative;
+    display: block;
     align-items: center;
     flex: 1;
   }
@@ -262,12 +263,17 @@ body, html {
   }
 
   &-like {
-    float: right;
-    color: #fff;
+    color: $background;
+    content: "";
     text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    float: right;
 
     &:hover {
-      color: $color-secondary;
+      color: $color-primary;
+      transition-duration: 0.35s;
+      background: linear-gradient($color-secondary, $color-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       text-shadow: none;
     }
   }
@@ -286,6 +292,7 @@ body, html {
     color: white;
     font-family: "Shrikhand", "cursive";
     margin: 0;
+    font-weight: normal;
     font-size: 1.2rem;
     margin-bottom: 1rem;
   }
